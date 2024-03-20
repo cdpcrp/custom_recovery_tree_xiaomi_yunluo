@@ -1,0 +1,4 @@
+# Soft dependencies extracted from modules themselves.
+softdep mt6789_dcm pre:mtk_dcm.ko
+softdep system_heap pre: mi_page_pool
+softdep mtk_mm_heap pre: mi_page_pool
