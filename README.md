@@ -1,4 +1,4 @@
-# Android device tree for Redmi 22081283G (yunluo)
+# TWRP Tree for Redmi Pad | 22081283G (yunluo)
 
 ```
 #

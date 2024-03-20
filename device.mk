@@ -21,15 +21,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.mt6789
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.mt6789 \
-    libgptutils \
-    libz \
-    libcutils
-
+# Update scripts
 PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh \
+
+# Update engine
+PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
