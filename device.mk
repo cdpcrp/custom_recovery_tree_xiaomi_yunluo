@@ -21,6 +21,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.mt6789
 
+# Dynamic
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Update scripts
 PRODUCT_PACKAGES += \
     otapreopt_script \
