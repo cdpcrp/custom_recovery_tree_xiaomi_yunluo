@@ -1,0 +1,53 @@
+# Android fstab file.
+/cache              ext4  /dev/block/by-name/rescue
+/nvdata             ext4  /dev/block/by-name/nvdata                      flags=display="NVData";backup=1
+/nvcfg              ext4  /dev/block/by-name/nvcfg                       flags=display="NVCFG";backup=1
+/persist            ext4  /dev/block/by-name/persist                     flags=display="Persist"
+/persistent         emmc  /dev/block/by-name/frp                         flags=display="Persistent"
+/nvram              auto  /dev/block/by-name/nvram                       flags=display="Nvram"
+/proinfo            auto  /dev/block/by-name/proinfo                     flags=display="Proinfo"
+/lk1                emmc  /dev/block/by-name/lk1                         flags=display="Bootloader1"
+/lk2                emmc  /dev/block/by-name/lk2                         flags=display="Bootloader2"
+/para               emmc  /dev/block/by-name/para                        flags=display="Para"
+/misc               emmc  /dev/block/by-name/misc                        flags=display="Misc"
+/boot               emmc  /dev/block/by-name/boot                        flags=display="Boot";slotselect;backup=1;flashimg=1
+/vbmeta_vendor      emmc  /dev/block/by-name/vbmeta_vendor               flags=display="VBMeta Vendor";slotselect;backup=1;flashimg=1
+/vbmeta_system      emmc  /dev/block/by-name/vbmeta_system               flags=display="VBMeta System";slotselect;backup=1;flashimg=1
+/logo               auto  /dev/block/by-name/logo                        flags=display="Logo";slotselect;backup=1
+/expdb              emmc  /dev/block/by-name/expdb
+/seccfg             auto  /dev/block/by-name/seccfg                      flags=display="Seccfg"
+/seccfg_image       emmc  /dev/block/by-name/seccfg                      flags=display="Seccfg-imei";backup=1
+/protect1           auto  /dev/block/by-name/protect1                    flags=display="Protect1"
+/protect1_image     emmc  /dev/block/by-name/protect1                    flags=display="Protect1-imei";backup=1
+/protect2           auto  /dev/block/by-name/protect2                    flags=display="Protect2"
+/protect2_image     emmc  /dev/block/by-name/protect2                    flags=display="Protect2-imei";backup=1
+/tee1               emmc  /dev/block/by-name/tee1 
+/tee2               emmc  /dev/block/by-name/tee2  
+/scp1               emmc  /dev/block/by-name/scp1  
+/scp2               emmc  /dev/block/by-name/scp2 
+/sspm1              emmc  /dev/block/by-name/sspm1 
+/sspm2              emmc  /dev/block/by-name/sspm2 
+/dpm1               emmc  /dev/block/by-name/dpm1  
+/dpm2               emmc  /dev/block/by-name/dpm2  
+/mcupm1             emmc  /dev/block/by-name/mcupm1 
+/mcupm2             emmc  /dev/block/by-name/mcupm2 
+/md1img             emmc  /dev/block/by-name/md1img  
+/md1dsp             emmc  /dev/block/by-name/md1dsp 
+/md1arm7            emmc  /dev/block/by-name/md1arm7  
+/md3img             emmc  /dev/block/by-name/md3img 
+/gz1                emmc  /dev/block/by-name/gz1  
+/gz2                emmc  /dev/block/by-name/gz2  
+/ccu                emmc  /dev/block/by-name/ccu  
+/vcp                emmc  /dev/block/by-name/vcp  
+/gpueb              emmc  /dev/block/by-name/gpueb  
+/mcf_ota            emmc  /dev/block/by-name/mcf_ota  
+/vendor_boot        emmc  /dev/block/by-name/vendor_boot                 flags=display="Vendor Boot";slotselect;backup=1;flashimg=1
+/boot               emmc  /dev/block/by-name/boot                 flags=display="Boot";slotselect;backup=1;flashimg=1
+/boot_para          emmc  /dev/block/by-name/boot_para  
+/odmdtbo            emmc  /dev/block/by-name/odmdtbo
+/dtbo               emmc  /dev/block/by-name/dtbo                        flags=display="Dtbo";slotselect;backup=1
+/otp                emmc  /dev/block/by-name/otp 
+/vbmeta             emmc  /dev/block/by-name/vbmeta                      flags=display="VBMeta";slotselect;flashimg=1
+
+# Removable Storage
+/usb_otg       auto  /dev/block/sda1       /dev/block/sda   /dev/block/sdd1     flags=display="USB OTG";storage;wipeingui;removable
