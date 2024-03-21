@@ -1,4 +1,5 @@
 import /init.recovery.microtrust.rc
+import /init.recovery.mtk-plpath-utils.rc
 
 on init
     setprop sys.usb.configfs 1
