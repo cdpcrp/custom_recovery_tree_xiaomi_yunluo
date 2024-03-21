@@ -20,7 +20,7 @@ service vendor.keymint-beanpod /system/bin/hw/android.hardware.security.keymint@
     disabled
     seclabel u:r:recovery:s0
 
-service vendor.vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+service vendor.vendor.gatekeeper-1-0 /system/bin/hw/android.hardware.gatekeeper@1.0-service
     interface android.hardware.gatekeeper@1.0::IGatekeeper default
     user root
     group root
